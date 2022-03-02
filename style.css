@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400;800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  color: white;
+  box-sizing: border-box;
+  font-family: "Orbitron";
+}
+body {
+  background-image: url(img/FondSite.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+header {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: auto;
+}
+.NavHead {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+  padding: 15px 0;
+}
+#LogoSite {
+  width: 100px;
+}
+#BtnNavHead {
+  width: 120px;
+  font-size: 20px;
+  border: 2px solid rgba(46, 40, 40, 0.87);
+  background-color: black;
+  transition: 0.1s linear;
+  border-radius: 1000px;
+  cursor: pointer;
+  color: rgba(255, 255, 255, 0.8);
+  letter-spacing: 1px;
+}
+#BtnNavHead:hover {
+  background-color: transparent;
+  transform: scale(1.1);
+}
+#InfoBtn {
+  left: 50px;
+  bottom: 18px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 5px 0;
+}
+#InfoBtn h4 {
+  font-size: 10px;
+}
+.main {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.TitreSlogan h1 {
+  font-size: 35px;
+  text-align: center;
+  color: #7fce9f;
+}
+.TitreSlogan h4 {
+  font-size: 22px;
+  text-align: center;
+  color: #f0bb53;
+}
+
+#ContentMenu {
+  width: 100%;
+  min-height: 100vh;
+  position: absolute;
+  top: 0;
+  left: -100%;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  transition: 0.4s linear;
+}
+a {
+  text-decoration: none;
+  color: #7fce9f;
+  font-size: 25px;
+  letter-spacing: 2px;
+  transition: 0.1s linear;
+  font-weight: 800;
+}
+a:hover {
+  color: #f0bb53;
+}
+li {
+  padding: 10px 0;
+  list-style: none;
+}
+.m {
+  width: 1px;
+  height: 20px;
+  background-color: white;
+}
+.Avant {
+  transform: rotate(45deg) translateX(0.5px);
+}
+.Aprait {
+  transform: rotate(-45deg);
+}
+#Close {
+  width: 30px;
+  height: 30px;
+  background-color: transparent;
+  border: 1px solid transparent;
+  display: flex;
+  align-items: center;
+  background-color: #7fce9f;
+  border-radius: 50%;
+  justify-content: center;
+  cursor: pointer;
+  position: absolute;
+  top: 40px;
+  right: 40px;
+  transition: 0.1s linear;
+}
+#Close:hover {
+  background-color: #f0bb53;
+}

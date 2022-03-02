@@ -1,13 +1,54 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Portfolio Charles Cantin</title>
+  </head>
+  <body>
+    <header>
+      <nav class="NavHead">
+        <button onclick="openlist()" id="BtnNavHead">
+          <img id="LogoSite" src="img/LogoSite.png" alt="LogoSite" />
+        </button>
+      </nav>
+      <div id="InfoBtn">
+        <ion-icon name="return-down-forward-outline"></ion-icon>
+        <h4>open menu</h4>
+      </div>
+    </header>
+    <main class="Container main">
+      <div class="TitreSlogan">
+        <h1>Charles Cantin</h1>
+        <h4>photographe</h4>
+      </div>
+    </main>
+    <div class="container" id="ContentMenu">
+      <div class="listsMenu">
+        <ul>
+          <li><a href="#" onclick="closelist()">Accueil</a></li>
+          <li><a href="#" onclick="closelist()">Galerie</a></li>
+          <li><a href="#" onclick="closelist()">Tarif&Préstation</a></li>
+          <li><a href="#" onclick="closelist()">CONTACT</a></li>
+        </ul>
+      </div>
+      <div class="ContentClose">
+        <button id="Close" onclick="closelist()">
+          <span class="Avant m"></span>
+          <span class="Aprait m"></span>
+        </button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg .com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
 </html>
