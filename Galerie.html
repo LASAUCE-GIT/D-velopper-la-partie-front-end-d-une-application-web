@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Galerie Photo Charles Cantin</title>
+</head>
+<body class="Body">
+  <header>
+    <nav class="NavHead">
+      <button onclick="openlist()" id="BtnNavHead">
+        <img id="LogoSite" src="img/LogoSite.png" alt="LogoSite" />
+      </button>
+    </nav>
+    <div id="InfoBtn">
+      <ion-icon name="return-down-forward-outline"></ion-icon>
+      <p>open menu</p>
+    </div>
+  </header>
+    <main class="MainOther">
+      <h4>Ma Galerie</h4>
+      <nav class="NavBarGalerie">
+        <ul>
+          <li><button class="btnGalerie"><img class="svgGalerie" src="img/icons-mariage.svg" alt="icons-mariage"></button></li>
+          <li><button class="btnGalerie"><img class="svgGalerie" src="img/icon-grossece.svg" alt="icon-grossece"></button></li>
+          <li><button class="btnGalerie"><img class="svgGalerie" src="img/icon-baby.svg" alt="icon-baby"></button></li>
+          <li><button class="btnGalerie"><img class="svgGalerie" src="img/icon-famille.svg" alt="icon-famille"></button></li>
+          <li><button class="btnGalerie"><img class="svgGalerie" src="img/icon-couple.svg" alt="icon-couple"></button></li>
+          <li><button class="btnGalerie"><img class="svgGalerie" src="img/icon-bateme.svg" alt="icon-bateme"></button></li>
+        </ul>
+      </nav>
+      
+    </main>
+
+
+
+  <div class="container" id="ContentMenu">
+    <div class="listsMenu">
+      <ul>
+        <li><a href="index.html" onclick="closelist()">ACCUEIL</a></li>
+        <li><a href="Galerie.html" onclick="closelist()">GALERIE</a></li>
+        <li><a href="#" onclick="closelist()">TARIFS & PRESTATIONS</a></li>
+        <li><a href="#" onclick="closelist()">CONTACT</a></li>
+      </ul>
+    </div>
+    <div class="ContentClose">
+      <button id="Close" onclick="closelist()">
+        <span class="Avant m"></span>
+        <span class="Aprait m"></span>
+      </button>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+      <script src="script.js"></script>
+      <script
+        type="module"
+        src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+      ></script>
+      <script
+        nomodule
+        src="https://unpkg .com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+      ></script>
+</body>
+</html>
