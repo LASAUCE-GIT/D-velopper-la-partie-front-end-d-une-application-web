@@ -199,9 +199,14 @@ main, titre slogan */
   border-radius: 50%;
   border: 1px solid white;
   color: aqua;
-  font-size: 22px;
+  font-size: 10px;
   transition: 0.1s linear;
   cursor: pointer;
+}
+#Page-Galerie main nav ul li button svg {
+  width: 50%;
+  height: 50%;
+  fill: aquamarine;
 }
 #Page-Galerie main nav ul li button:hover {
   background-color: transparent;
