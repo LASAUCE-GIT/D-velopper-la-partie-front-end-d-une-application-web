@@ -1,29 +1,91 @@
+/*reset auto*/
 @import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400;800&display=swap");
 * {
+  list-style: none;
+  text-decoration: none;
+
   margin: 0;
   padding: 0;
-  text-decoration: none;
-  list-style: none;
-  color: white;
-  box-sizing: border-box;
-  font-family: "Orbitron";
 }
-.Boody {
+#b1 {
   background-image: url(img/FondSite.jpg);
-  background-repeat: no-repeat;
   background-size: cover;
+  background-repeat: no-repeat;
 }
-header {
-  position: fixed;
-  display: flex;
 
-  flex-direction: column;
-  align-items: center;
+/*section menu ouverture en js position absolute , hover 
+button closelist*/
+
+#ContentMenu {
   width: 100%;
-  height: auto;
-  background-color: rgba(0, 0, 0, 0.699);
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: -100%;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  transition: 0.4s linear;
+  font-family: "orbitron";
+  font-weight: 400;
 }
-.NavHead {
+a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 25px;
+  letter-spacing: 2px;
+  transition: 0.1s linear;
+  font-weight: 800;
+}
+a:hover {
+  color: aquamarine;
+}
+li {
+  padding: 10px 0;
+  list-style: none;
+}
+.m {
+  width: 1px;
+  height: 20px;
+  background-color: rgb(255, 255, 255);
+}
+.Avant {
+  transform: rotate(45deg) translateX(0.5px);
+}
+.Aprait {
+  transform: rotate(-45deg);
+}
+#Close {
+  width: 30px;
+  height: 30px;
+  background-color: transparent;
+  border: 1px solid transparent;
+  display: flex;
+  align-items: center;
+  background-color: rgb(0, 0, 0);
+  border-radius: 50%;
+  justify-content: center;
+  cursor: pointer;
+  position: absolute;
+  top: 40px;
+  right: 40px;
+  transition: 0.1s linear;
+}
+#Close:hover {
+  background-color: aquamarine;
+}
+
+/* section page-d'accueil, nav-bar , content menu button opentlist
+main, titre slogan */
+
+#Page-Accueil {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 100px 796px;
+}
+#NavHead {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -49,346 +111,408 @@ header {
   background-color: transparent;
   transform: scale(1.1);
 }
-#InfoBtn {
-  left: 50px;
-  bottom: 18px;
+
+#Titre-Slogan {
+  display: flex;
   position: relative;
+
+  flex-direction: column;
+  justify-content: first baseline;
+  align-items: center;
+  color: white;
+}
+#Titre-Slogan h1 {
+  position: relative;
+  top: 33%;
   display: flex;
   justify-content: center;
+  align-items: center;
+  height: 8%;
   width: 100%;
-  padding: 5px 0;
+  font-size: 50px;
+  color: aquamarine;
+  text-shadow: -10px 15px 2px rgba(127, 255, 212, 0.315);
 }
-#InfoBtn p {
-  font-size: 10px;
-}
-.main {
-  width: 100%;
-  min-height: 100vh;
+#Titre-Slogan p {
+  position: relative;
+  top: 33%;
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 100%;
+  height: 6%;
+  font-size: 32px;
+  color: aquamarine;
 }
-.TitreSlogan h1 {
-  font-size: 35px;
-  text-align: center;
-  color: #7fce9f;
-}
-.TitreSlogan h4 {
-  font-size: 22px;
-  text-align: center;
-  color: #f0bb53;
+#Titre-Slogan ul {
+  position: relative;
+  top: 33%;
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  color: rgb(255, 255, 255);
+  font-size: 20px;
 }
 
-#ContentMenu {
-  width: 100%;
-  height: 100vh;
-  position: absolute;
-  top: 0;
-  left: -100%;
+/*creation Page-Galerie*/
+
+#b2 {
   background-color: black;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  transition: 0.4s linear;
-}
-a {
-  text-decoration: none;
-  color: #7fce9f;
-  font-size: 25px;
-  letter-spacing: 2px;
-  transition: 0.1s linear;
-  font-weight: 800;
-}
-a:hover {
-  color: #f0bb53;
-}
-li {
-  padding: 10px 0;
-  list-style: none;
-}
-.m {
-  width: 1px;
-  height: 20px;
-  background-color: white;
-}
-.Avant {
-  transform: rotate(45deg) translateX(0.5px);
-}
-.Aprait {
-  transform: rotate(-45deg);
-}
-#Close {
-  width: 30px;
-  height: 30px;
-  background-color: transparent;
-  border: 1px solid transparent;
-  display: flex;
-  align-items: center;
-  background-color: #7fce9f;
-  border-radius: 50%;
-  justify-content: center;
-  cursor: pointer;
-  position: absolute;
-  top: 40px;
-  right: 40px;
-  transition: 0.1s linear;
-}
-#Close:hover {
-  background-color: #f0bb53;
+  color: white;
 }
 
-/* PAGE GALERIE */
-
-.Body {
+#Page-Galerie {
   display: grid;
-
-  grid-template-rows: 12.6% 100%;
-  width: 100%;
-  height: auto;
-  background-color: rgb(0, 0, 0);
+  grid-template-columns: 1fr;
+  grid-template-rows: 100px 100px 696px;
 }
-.MainOther {
-  grid-row: 2 / 2;
-  height: 795px;
-}
-.MainOther h4 {
+#Page-Galerie h1 {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 22px;
-  width: 100%;
-  height: 50px;
+  font-size: 32px;
+  color: aquamarine;
+  text-shadow: -10px 15px 2px rgba(127, 255, 212, 0.315);
 }
-
-.NavBarGalerie ul {
+#Page-Galerie main nav {
+  height: 70px;
+}
+#Page-Galerie main nav ul {
   display: flex;
   justify-content: space-evenly;
+  align-items: center;
   width: 100%;
+  height: 100%;
 }
-.svgGalerie {
-  width: 24px;
-  
+#Page-Galerie main nav ul li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 50%;
 }
-
-.btnGalerie {
-  width: 50px;
-  height: 50px;
-  font-size: 10px;
-  border: 2px solid rgba(46, 40, 40, 0.87);
-  background-color: #7fce9f;
+#Page-Galerie main nav ul li button {
+  width: 60%;
+  height: 100%;
+  background-color: transparent;
+  border-radius: 50%;
+  border: 1px solid white;
+  color: aqua;
+  font-size: 22px;
   transition: 0.1s linear;
-  border-radius: 1000px;
   cursor: pointer;
 }
-.btnGalerie:hover {
-  background-color: #f0bb53;
+#Page-Galerie main nav ul li button:hover {
+  background-color: transparent;
   transform: scale(1.1);
 }
-.ContentGalerie {
+#Page-Galerie main nav ul li button:active {
+  background-color: white;
+}
+#GalerieGrid {
   display: grid;
-  width: 100%;
-  height: 675.5px;
-  grid-template-columns: repeat(auto-fill, minmax(16.66%, auto));
-  grid-template-rows: 16.6% 16.6% 16.6% 16.6% 16.6% 16.6% 16.6%;
-}
-.imgG {
-  transition: linear 0.2s;
-  width: 100%;
-  height: 100%;
-}
-.imgG:hover {
-  transform: scale(1.1);
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 313px 313px;
 }
 
-/*  PAGE - TARIFS ET PRESTATIONS  */
+#GalerieGrid #item1 {
+  background-image: url(img/mariage1.jpg);
+  background-size: cover;
+  background-position: center;
+}
+#GalerieGrid #item2 {
+  background-image: url(img/mariage2.jpg);
+  background-size: cover;
+  background-position: center;
+}
+#GalerieGrid #item3 {
+  background-image: url(img/mariage3.jpg);
+  background-size: cover;
+  background-position: center;
+}
+#GalerieGrid #item4 {
+  background-image: url(img/mariage4.jpg);
+  background-size: cover;
+  background-position: center;
+}
+#GalerieGrid #item5 {
+  background-image: url(img/mariage5.jpg);
+  background-size: cover;
+  background-position: center;
+}
+#GalerieGrid #item6 {
+  background-image: url(img/mariage6.jpg);
+  background-size: cover;
+  background-position: bottom;
+}
+.itemG {
+  transition: 0.01s linear;
+  cursor: pointer;
+}
+.itemG:hover {
+  background-color: transparent;
+  transform: scale(1.01);
+}
 
-.Contentprestations {
+
+/*page tarifs et presations*/
+
+#Page-Tarifs {
   display: grid;
-  grid-template-columns: auto;
-  grid-template-rows: 124.16px 124.16px 124.16px 124.16px 124.16px 124.16px;
-  
+  grid-template-columns: 1fr;
+  grid-template-rows: 100px 70px 1fr;
 }
-.Article {
-  width: 100%;
-  height: 100%;
-  display: flex;
+#Page-Tarifs h1 {
+  display: grid;
   align-items: center;
-  font-size: 12px;
-  
-}
-.iconsA {
-  font-size: 80px;
-  height: 80%;
-  color: white;
-  width: 20%;
-}
-
-
-.TDSA {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  height: 100%;
-  width: 80%;
-}
-.prix {
-  display: flex;
-  flex-direction: column;
-  height: 50%;
-  align-items: center;
-  justify-content: space-around;
-}
-.prix ion-icon {
+  justify-items: center;
+  color: aquamarine;
+  text-shadow: -10px 15px 2px rgba(127, 255, 212, 0.315);
   font-size: 32px;
 }
-.ItemsTP {
-  width: 100%;
-  height: 100%;
-}
-
-
-
-
-.ContentContact{
-      display: grid;
-      grid-template-columns: 100%;
-      grid-template-rows: repeat(4 , auto) ;
-      align-items: center;
-      justify-items: center;
-}
-.ContentContact h3 {
-  display: flex;
-  align-items: flex-end;
-  height: 50px;
-}
-
-.ContentContact form div{
-  display: flex;
-  flex-direction: column;
+#main{
+  display: grid;
+  grid-template-columns: 6fr 1.5fr;
+  grid-template-rows: repeat(6 , 121px);
+  
   
 }
-#msg{
-  height: 200px;
-}
-.ContentContact div {
-  margin: 10px;
-}
-.ContentContact div button {
-  display: flex;
-  justify-content: center;
+.ContentPresta{
+  display: grid;
+  text-align: justify;
   align-items: center;
-  background-color: transparent;
-  width: 100px;
-  height: 40px;
+  justify-items: center;
  
   
 }
+.ContentPresta h2{
+  font-size: 28px;
 
-@media (min-width: 450px) {
-  .Boody {
-    background-image: url(img/fondsite2.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-  header{
-    height: 112px;
-  }
+}
+.ContentPrix{
+  display: grid;
+  text-align: justify;
+  align-items: center;
+  justify-content: center;
+  color: aquamarine;
+}
 
-  #LogoSite {
-    width: 130px;
-  }
+/*Page contact */
 
-  #BtnNavHead {
-    width: 150px;
-  }
-
-  .TitreSlogan h1 {
-    font-size: 60px;
-    text-align: center;
-    color: #7fce9f;
-  }
-
-  .TitreSlogan h4 {
-    font-size: 32px;
-    text-align: center;
-    color: #f0bb53;
-  }
-
-  #InfoBtn p {
-    font-size: 14px;
-  }
-  .MainOther {
-    display: flex;
-    flex-direction: column;
-
+#Page-Contact{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 100px 70px 1fr;
+}
+#Page-Contact h1{
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  color: aquamarine;
+  text-shadow: -10px 15px 2px rgba(127, 255, 212, 0.315);
+  font-size: 32px;
+}
+#MainContact {
+  display: grid;
+  grid-template-columns: 20px 1fr 20px;
+  grid-template-rows: 330px 330px 65px;
+}
+#ContentForm{
+  display: grid;
+  grid-column: 2;
+  grid-row: 1;
+  align-items: center;
+  justify-items: center;
+}
+#ContentForm div input {
+  width: 200px;
+  height: 20px;
+}
+#ContentForm div  #msg {
+  width: 300px;
+  height: 100px;
+}
+#ContentForm div  button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 130px;
+  height: 50px;
+  background-color: transparent;
+  color: aquamarine;
+  border-radius: 10%;
+  border: 1px aquamarine solid;
+  transition: 0.1s linear;
+  cursor: pointer;
+}
+#ContentForm div  button:hover{
+  background-color: transparent;
+  transform: scale(1.1);
+}
+#ContentMap{
+  display: grid; 
+  grid-row: 2; 
+  grid-column: 2;
+}
+#MainContact h3 {
+  display: grid;
+  grid-row: 3;
+  grid-column:2; 
+  align-items: center; 
+  justify-items: center; 
+  color: aquamarine;
+}
+@media (min-width: 720px) {
+  #ContentForm{
+    display: grid;
+    grid-column: 2;
+    grid-row: 1;
     align-items: center;
-    grid-row: 2 / 2;
-    height: 780.5px;
+    justify-items: center;
   }
-  .MainOther h4 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 22px;
-    width: 100%;
-    height: 100px;
+  #MainContact {
+    display: grid;
+    grid-template-columns: 20px 1fr 1fr 20px;
+    grid-template-rows: 550px 180px;
   }
-  
-    .ContentGalerie {
-      display: grid;
-      width: 80%;
-      height: 655.5px;
-      grid-template-columns: repeat(auto-fill, minmax(10.66%, auto));
-      grid-template-rows: 20.6% 20.6% 20.6% 20.6% 20.6% 20.6% 20.6%;
-    }
-  
-  .imgG {
-    grid-row: 1/2/2;
-    grid-column: 3/3/3;
+  #MainContact h3 {
+    display: grid;
+    grid-row: 2/2;
+    grid-column:2/4; 
+    align-items: center; 
+    justify-items: center; 
+    color: aquamarine;
+  }
+  #ContentMap {
+    grid-column: 3;
+    grid-row: 1;
+  }
+ 
+  #ContentMap iframe{
     width: 100%;
     height: 100%;
   }
-  .NavBarGalerie {
-    display: flex;
-    justify-content: space-evenly;
-    width: 100%;
+  #ContentForm div  #msg {
+    width: 500px;
+    height: 100px;
   }
-  .iconsA {
-    font-size: 80px;
-    height: 80%;
-    color: white;
-    width: 5%;}
+  #ContentForm div input {
+    width: 500px;
+    height: 20px;
+  }
 
-    .TDSA {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      height: 100%;
-      width: 100%;
-     
-    }
-    .Article {
-      width: 100%;
-      height: 100%;
-      display: flex;
-     
-      align-items: center;
-      font-size: 20px;
-      
-    }
-    .Contentprestations {
-      display: grid;
-      grid-template-columns: auto;
-      grid-template-rows: 100.16px 100.16px 100.16px 100.16px 100.16px 100.16px;
-      width: 100%;
-      
-      
-      
-    }
+  #main{
+    display: grid;
+    grid-template-columns: 6fr auto;
+    grid-template-rows: repeat(6 , 121px);
+    
+    
+  }
+  #BtnNavHead {
+    width: 120px;
+    font-size: 50px;
+    border: 2px solid rgba(46, 40, 40, 0.87);
+    background-color: black;
+    transition: 0.1s linear;
+    border-radius: 1000px;
+    cursor: pointer;
+    color: rgba(255, 255, 255, 0.8);
+    letter-spacing: 1px;
+  }
+
+  #Titre-Slogan h1 {
+    position: relative;
+    top: 33%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 8%;
+    width: 100%;
+    font-size: 80px;
+    color: aquamarine;
+    text-shadow: -10px 15px 2px rgba(127, 255, 212, 0.315);
+  }
+  #Titre-Slogan p {
+    position: relative;
+    top: 33%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 6%;
+    font-size: 50px;
+    color: aquamarine;
+  }
+  #Titre-Slogan ul {
+    position: relative;
+    top: 33%;
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    color: rgb(255, 255, 255);
+    font-size: 50px;
+  }
+
+  #b1 {
+    background-image: url(img/fondsite2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  #Page-Galerie {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px 100px 700px;
+  }
+  #GalerieGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 313px 313px;
+    padding: 0 10px;
+  }
+  #Page-Galerie main nav ul li button {
+    width: 20%;
+    height: 150%;
+    border-radius: 50%;
+    font-size: 32px;
+  }
+
+  #Page-Galerie h1 {
+    font-size: 50px;
+  }
+  #GalerieGrid #item1 {
+    background-image: url(img/mariage1.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+  #GalerieGrid #item2 {
+    background-image: url(img/mariage2.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+  #GalerieGrid #item3 {
+    background-image: url(img/mariage3.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+  #GalerieGrid #item4 {
+    background-image: url(img/mariage4.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+  #GalerieGrid #item5 {
+    background-image: url(img/mariage5.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+  #GalerieGrid #item6 {
+    background-image: url(img/mariage6.jpg);
+    background-size: cover;
+    background-position: center;
+  }
 }
+
+
+

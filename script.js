@@ -6,7 +6,3 @@ function closelist(){
     document.getElementById("ContentMenu").style.left = "-100%";
     document.getElementById("ContentMenu").style.opacity = "0";
 }
-  
-
-  
-

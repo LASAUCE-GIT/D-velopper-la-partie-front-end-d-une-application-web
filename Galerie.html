@@ -1,96 +1,55 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
-  <title>Galerie Photo Charles Cantin</title>
+  <script src="https://kit.fontawesome.com/a78ef1555f.js" crossorigin="anonymous"></script>
+  <title>Document</title>
+
 </head>
 
-<body class="Body">
-  <header>
-    <nav class="NavHead">
-      <button onclick="openlist()" id="BtnNavHead">
-        <img id="LogoSite" src="img/LogoSite.png" alt="LogoSite" />
-      </button>
-    </nav>
-    <div id="InfoBtn">
-      <ion-icon name="return-down-forward-outline"></ion-icon>
-      <p>open menu</p>
-    </div>
-  </header>
-  <main class="MainOther">
-    <h4>Ma Galerie</h4>
-    <nav class="NavBarGalerie">
-      <ul>
-        <li><button class="btnGalerie"><img class="svgGalerie" src="img/icons-mariage.svg" alt="icons-mariage"></button>
-        </li>
-        <li><button class="btnGalerie"><img class="svgGalerie" src="img/icon-grossece.svg" alt="icon-grossece"></button>
-        </li>
-        <li><button class="btnGalerie"><img class="svgGalerie" src="img/babyby.svg" alt="icon-baby"></button></li>
-        <li><button class="btnGalerie"><img class="svgGalerie" src="img/famylyly.svg" alt="icon-famille"></button>
-        </li>
-        <li><button class="btnGalerie"><img class="svgGalerie" src="img/icon-couple.svg" alt="icon-couple"></button>
-        </li>
-        <li><button class="btnGalerie"><img class="svgGalerie" src="img/icon-bateme.svg" alt="icon-bateme"></button>
-        </li>
-      </ul>
-    </nav>
-    <div class="ContentGalerie">
-      <img class="imgG" src="img/mariage1.jpg" alt="mariage1">
-      <img class="imgG" src="img/mariage2.jpg" alt="mariage2">
-      <img class="imgG" src="img/mariage3.jpg" alt="mariage3">
-      <img class="imgG" src="img/mariage4.jpg" alt="mariage4">
-      <img class="imgG" src="img/mariage5.jpg" alt="mariage5">
-      <img class="imgG" src="img/mariage6.jpg" alt="mariage6">
-      <img src="img/Grossese1.jpg" alt="Grossese1" class="imgG">
-      <img src="img/Grossese2.jpg" alt="Grossese2" class="imgG">
-      <img src="img/Grossese3.jpg" alt="Grossese3" class="imgG">
-      <img src="img/Grossese4.jpg" alt="Grossese4" class="imgG">
-      <img src="img/Grossese5.jpg" alt="Grossese5" class="imgG">
-      <img src="img/Grossese6.jpg" alt="Grossese6" class="imgG">
-      <img src="img/Baby1.jpg" alt="" class="imgG">
-      <img src="img/Baby2.jpg" alt="" class="imgG">
-      <img src="img/Baby3.jpg" alt="" class="imgG">
-      <img src="img/Baby4.jpg" alt="" class="imgG">
-      <img src="img/Baby5.jpg" alt="" class="imgG">
-      <img src="img/Baby6.jpg" alt="" class="imgG">
-      <img src="img/Famille1.jpg" alt="" class="imgG">
-      <img src="img/Famille2.jpg" alt="" class="imgG">
-      <img src="img/Famille3.jpg" alt="" class="imgG">
-      <img src="img/Famille4.jpg" alt="" class="imgG">
-      <img src="img/Famille5.jpg" alt="" class="imgG">
-      <img src="img/Famille6.jpg" alt="" class="imgG">
-      <img src="img/couple1.jpg" alt="" class="imgG">
-      <img src="img/couple2.jpg" alt="" class="imgG">
-      <img src="img/couple3.jpg" alt="" class="imgG">
-      <img src="img/couple4.jpg" alt="" class="imgG">
-      <img src="img/couple5.jpg" alt="" class="imgG">
-      <img src="img/couple6.jpg" alt="" class="imgG">
-      <img src="img/bateme1.jpg" alt="" class="imgG">
-      <img src="img/bateme2.jpg" alt="" class="imgG">
-      <img src="img/bateme3.jpg" alt="" class="imgG">
-      <img src="img/bateme4.jpg" alt="" class="imgG">
-      <img src="img/bateme5.jpg" alt="" class="imgG">
-      <img src="img/bateme6.jpg" alt="" class="imgG">
-
-
-    </div>
-
-
-  </main>
-
-
-
-  <div class="container" id="ContentMenu">
+<body id="b2">
+  <section id="Page-Galerie">
+    <header>
+      <nav id="NavHead">
+        <button onclick="openlist()" id="BtnNavHead">
+          <img id="LogoSite" src="img/LogoSite.png" alt="LogoSite" />
+        </button>
+      </nav>
+    </header>
+    <h1>Ma Galerie</h1>
+    <main>
+      <nav>
+        <ul>
+          <li><button></button></li>
+          <li><button></button></li>
+          <li><button></button></li>
+          <li><button></button></li>
+          <li><button></button></li>
+          <li><button></button></li>
+          <li><button></button></li>
+        </ul>
+      </nav>
+      <div id="GalerieGrid">
+        <div id="item1" class="itemG"></div>
+        <div id="item2" class="itemG"></div>
+        <div id="item3" class="itemG"></div>
+        <div id="item4" class="itemG"></div>
+        <div id="item5" class="itemG"></div>
+        <div id="item6" class="itemG"></div>
+      </div>
+    </main>
+  </section>
+  <section id="ContentMenu">
     <div class="listsMenu">
       <ul>
         <li><a href="index.html" onclick="closelist()">ACCUEIL</a></li>
         <li><a href="Galerie.html" onclick="closelist()">GALERIE</a></li>
-        <li><a href="Tarifs&Prestations.html" onclick="closelist()">TARIFS & PRESTATIONS</a></li>
-        <li><a href="#" onclick="closelist()">CONTACT</a></li>
+        <li><a href="Tarifs&Prestation.html" onclick="closelist()">TARIFS & PRESTATIONS</a></li>
+        <li><a href="Contact.html" onclick="closelist()">CONTACT</a></li>
       </ul>
     </div>
     <div class="ContentClose">
@@ -99,19 +58,10 @@
         <span class="Aprait m"></span>
       </button>
     </div>
-  </div>
-
-
-
-
-
-
-
-
+  </section>
 
   <script src="script.js"></script>
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg .com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
 </body>
 
 </html>

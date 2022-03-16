@@ -2,38 +2,46 @@
 <html lang="fr">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="style.css" />
-  <title>Portfolio Charles Cantin</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/a78ef1555f.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css">
+  <title>Charles Cantin</title>
 </head>
 
-<body class="Boody">
-  <header>
-    <nav class="NavHead">
-      <button onclick="openlist()" id="BtnNavHead">
-        <img id="LogoSite" src="img/LogoSite.png" alt="LogoSite" />
-      </button>
-    </nav>
-    <div id="InfoBtn">
-      <ion-icon name="return-down-forward-outline"></ion-icon>
-      <p>open menu</p>
-    </div>
-  </header>
-  <main class="Container main">
-    <div class="TitreSlogan">
+<body id="b1">
+  <section id="Page-Accueil">
+    <header>
+      <nav id="NavHead">
+        <button onclick="openlist()" id="BtnNavHead">
+          <img id="LogoSite" src="img/LogoSite.png" alt="LogoSite" />
+        </button>
+      </nav>
+    </header>
+    <main id="Titre-Slogan">
+      <ul>
+        <li><a href="">
+            <ion-icon name="logo-twitter"></ion-icon>
+          </a></li>
+        <li><a href="">
+            <ion-icon name="logo-facebook"></ion-icon>
+          </a></li>
+        <li><a href="">
+            <ion-icon name="logo-instagram"></ion-icon>
+          </a></li>
+      </ul>
       <h1>Charles Cantin</h1>
-      <h4>photographe</h4>
-    </div>
-  </main>
-  <div class="container" id="ContentMenu">
+      <p>photographe</p>
+    </main>
+  </section>
+  <section id="ContentMenu">
     <div class="listsMenu">
       <ul>
         <li><a href="index.html" onclick="closelist()">ACCUEIL</a></li>
         <li><a href="Galerie.html" onclick="closelist()">GALERIE</a></li>
-        <li><a href="Tarifs&Prestations.html" onclick="closelist()">TARIFS & PRESTATIONS</a></li>
-        <li><a href="#" onclick="closelist()">CONTACT</a></li>
+        <li><a href="Tarifs&Prestation.html" onclick="closelist()">TARIFS & PRESTATIONS</a></li>
+        <li><a href="Contact.html" onclick="closelist()">CONTACT</a></li>
       </ul>
     </div>
     <div class="ContentClose">
@@ -42,7 +50,7 @@
         <span class="Aprait m"></span>
       </button>
     </div>
-  </div>
+  </section>
   <script src="script.js"></script>
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg .com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>

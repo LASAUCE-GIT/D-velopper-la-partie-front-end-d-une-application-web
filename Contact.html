@@ -2,81 +2,76 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <title>CONTACT</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a78ef1555f.js" crossorigin="anonymous"></script>
+    <title>Contactez-moi</title>
 </head>
 
-<body class="Body">
-  <header>
-    <nav class="NavHead">
-      <button onclick="openlist()" id="BtnNavHead">
-        <img id="LogoSite" src="img/LogoSite.png" alt="LogoSite" />
-      </button>
-    </nav>
-    <div id="InfoBtn">
-      <ion-icon name="return-down-forward-outline"></ion-icon>
-      <p>open menu</p>
-    </div>
-  </header>
-  <main class="MainOther">
-    <div class="ContentContact">
-      <h3>Contactez Nous</h3>
-      <form action="" method="post">
-        <div>
-          <label for="name">Nom :</label>
-          <input type="text" id="name" name="user_name" />
+<body id="b2">
+    <section id="Page-Contact">
+        <header>
+            <nav id="NavHead">
+                <button onclick="openlist()" id="BtnNavHead">
+                    <img id="LogoSite" src="img/LogoSite.png" alt="LogoSite" />
+                </button>
+            </nav>
+        </header>
+        <h1>Contactez-moi</h1>
+        <main id="MainContact">
+            <form id="ContentForm" action="#" method="post">
+                <div>
+                    <label for="name"></label>
+                    <input type="text" id="name" name="user_name" placeholder="nom">
+
+                </div>
+                <div>
+                    <label for="surname"></label>
+                    <input type="text" id="surname" name="user_name" placeholder="Prénom">
+                </div>
+                <div>
+                    <label for="tel"></label>
+                    <input type="text" id="number" name="user_number" placeholder="06xxxxxx">
+                </div>
+                <div>
+                    <label for="mail"></label>
+                    <input type="email" id="mail" name="user_mail" placeholder="VotreEmail@Gmail.com">
+                </div>
+                <div>
+                    <label for="msg"></label>
+                    <textarea id="msg" name="user_message" placeholder="laissez moi votre message"></textarea>
+                </div>
+                <div>
+                    <button type="submit">Envoyer</button>
+                </div>
+            </form>
+            <div id="ContentMap" >
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6649.226297755054!2d7.58972717793397!3d45.12414848638208!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478869eb8bff7e17%3A0x7be1b8bde7847d54!2sOMA%20Druento!5e1!3m2!1sfr!2sfr!4v1647399558568!5m2!1sfr!2sfr"
+                    width="374" height="330" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+            <h3>Via Torino, 71, 10040 Druento TO, Italie</h3>
+        </main>
+    </section>
+    <section id="ContentMenu">
+        <div class="listsMenu">
+            <ul>
+                <li><a href="index.html" onclick="closelist()">ACCUEIL</a></li>
+                <li><a href="Galerie.html" onclick="closelist()">GALERIE</a></li>
+                <li><a href="Tarifs&Prestation.html" onclick="closelist()">TARIFS & PRESTATIONS</a></li>
+                <li><a href="Contact.html" onclick="closelist()">CONTACT</a></li>
+            </ul>
         </div>
-        <div>
-          <label for="mail">E-mail :</label>
-          <input type="email" id="mail" name="user_email" />
+        <div class="ContentClose">
+            <button id="Close" onclick="closelist()">
+                <span class="Avant m"></span>
+                <span class="Aprait m"></span>
+            </button>
         </div>
-        <div>
-          <label for="msg">Message :</label>
-          <textarea id="msg" name="user_message"></textarea>
-        </div>
-
-      </form>
-      <div>
-        <button type="submit">Envoyer</button>
-      </div>
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11570.3819053949!2d5.221940783151153!3d43.531627671110556!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12c9f009418703b1%3A0x16b942b3d7b960a5!2sLes%20Pinettes%2C%2013880%20Velaux!5e0!3m2!1sfr!2sfr!4v1647130359905!5m2!1sfr!2sfr"
-        width="250" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-    </div>
-
-
-
-
-  </main>
-
-
-
-
-
-  <div class="container" id="ContentMenu">
-    <div class="listsMenu">
-      <ul>
-        <li><a href="index.html" onclick="closelist()">ACCUEIL</a></li>
-        <li><a href="Galerie.html" onclick="closelist()">GALERIE</a></li>
-        <li><a href="Tarifs&Prestations.html" onclick="closelist()">TARIFS & PRESTATIONS</a></li>
-        <li><a href="#" onclick="closelist()">CONTACT</a></li>
-      </ul>
-    </div>
-    <div class="ContentClose">
-      <button id="Close" onclick="closelist()">
-        <span class="Avant m"></span>
-        <span class="Aprait m"></span>
-      </button>
-    </div>
-  </div>
-  <script src="script.js"></script>
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg .com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-</body>
-
+    </section>
+    <script src="script.js"></script>
 </body>
 
 </html>
